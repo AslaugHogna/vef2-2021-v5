@@ -52,10 +52,10 @@ export function NewsList() {
   return (
     <div>
         <div className={s.frettir}>
-          {data && headlines.map(frett => (
-            <div className={s.flokkar}>
+          {data && headlines.map((frett, index) => (
+            <div key={index} className={s.flokkar}>
               <div className={s.barafrettir}>
-                <p><News newsid={frett.id} fjoldi={5}/></p>
+                <News newsid={frett.id} fjoldi={5}/>
               </div>
               <p><NavLink
                 className={s.navlink}

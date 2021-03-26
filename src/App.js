@@ -1,5 +1,5 @@
 // TODO sækja og setja upp react router
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 
 import { Index } from './pages/Index';

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import s from './Layout.module.scss';
 
 export function Layout({ title, children }) {
@@ -11,6 +12,7 @@ export function Layout({ title, children }) {
       </main>
       <hr></hr>
       <footer>
+      <div><NavLink to='/'>Heim</NavLink></div>
       Fréttir frá <a href="https://www.ruv.is/rss">RSS</a> þjónustu <a href="https://www.ruv.is/">RÚV</a>.
       </footer>
     </div>

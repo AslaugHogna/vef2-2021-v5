@@ -49,8 +49,8 @@ export function News({ newsid, fjoldi }) {
     <div className={!fjoldi ? s.news : null}>
       <div className={!fjoldi ? s.newsitems : null}>
         {data && (<h2>{data.title}</h2>)}
-        {data && data.items.slice(0, fjoldi).map(frett => (
-          <p><a href={frett.link}>{frett.title}</a></p>
+        {data && data.items.slice(0, fjoldi).map((frett,index) => (
+          <p key={index}><a href={frett.link}>{frett.title}</a></p>
         ))}
       </div>
       {!fjoldi &&
