@@ -12,8 +12,9 @@ export function Layout({ title, children }) {
       </main>
       <hr></hr>
       <footer>
-      <div><NavLink to='/'>Heim</NavLink></div>
-      Fréttir frá <a href="https://www.ruv.is/rss">RSS</a> þjónustu <a href="https://www.ruv.is/">RÚV</a>.
+      <div className={s.footerlinks}><NavLink to='/'>Heim</NavLink>
+      <span>Fréttir frá <a href="https://www.ruv.is/rss">RSS</a> þjónustu <a href="https://www.ruv.is/">RÚV</a>.</span>
+      </div>
       </footer>
     </div>
   )}

@@ -17,3 +17,11 @@ a {
   color: #000;
 }
 
+.footerlinks {
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: space-between;
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
